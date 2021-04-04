@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yusei Magic', sans-serif;
+}
+.haeder{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/1210202012043PM5Q2B1751.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+	overflow:hidden;
+}
+nav img{
+    width: 10vw;
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: crimson;
+    display: block;
+    margin: auto;
+    transition: all 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text_box{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text_box h1{
+    font-size: 2.5rem;
+    color: #DD0706;
+}
+.text_box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.first_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #DD0706;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+}
+.first_btn:hover{
+    border: 1px solid #fff;
+    background: #DD0706;
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px ;
+    /* width: 80%;
+    margin: 5% auto;
+    display: grid;
+    place-items: center; */
+}
+.course h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.course h1::after{
+    content: "\f005";
+    width:33vw;
+    height: 18px;
+    color: darkred;
+    font-size: 2.2rem;
+    font-family: "Font Awesome 5 free";
+    display: block;
+    margin: 0 auto;
+    border-bottom: 8px solid crimson;
+    border-radius: 10px;
+}
+.course p{
+    font-size: 14px;
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 14px;
+}
+.boxes{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.box-content{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+.course h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.box-content:hover{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.012);
+}
+.campus{
+    width: 80%;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+}
+.campus h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.campus h1::after{
+    content: "\f005";
+    width:33vw;
+    height: 18px;
+    color: darkred;
+    font-size: 2.2rem;
+    font-family: "Font Awesome 5 free";
+    display: block;
+    margin: 0 auto;
+    border-bottom: 8px solid crimson;
+    border-radius: 10px;
+}
+.campus-box{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.campus-box img{
+    width: 100%;
+    display: block;
+}
+.campus p{
+    padding:10px 0 10px 0;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.layer:hover{
+    background: rgba(74, 105, 189,0.4);
+}
+.layer h4{
+    position: absolute;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+.message{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /* padding: 60px; */
+}
+.message h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.message h1::after{
+    content: "\f005";
+    width:20vw;
+    height: 12px;
+    color: darkred;
+    font-size: 1.5rem;
+    font-family: "Font Awesome 5 free";
+    display: block;
+    margin: 0 auto;
+    border-bottom: 8px solid crimson;
+    border-radius: 10px;
+}
+.message p{
+    padding: 10px 0 10px 0;
+}
+.message-box{
+    flex-basis: 31%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom:3%;
+    text-align: left;
+    border: 1px solid #DD0706;
+    padding: 1.5%;
+    transition: all 0.5s;
+}
+.message-box:hover{
+    box-shadow: 0 10px 20px -6px #000;
+}
+.message-box h3{
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+
+.message-box h3::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:red;
+	display:block;
+	margin:auto;
+	transition:all 0.5s;
+    position: absolute;
+    left:10%;
+}
+.message-box:hover >h3::after{
+	width:25%;
+}
+
+
+.message-box p{
+    padding: 0 0 0 5px;
+    font-size: 16px;
+}
+.message-box a{
+        display: inline-block;
+        text-decoration: none;
+        color: #DD0706;
+        border: 1px solid #DD0706;
+        padding: 12px 34px;
+        font-size: 14px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        transition: all 1s;
+}
+.message-box a:hover{
+    border: 1px solid #fff;
+    background: #DD0706;
+    color: #fff;
+    box-shadow: 0 10px 20px -6px #000;
+}
+.message-box img{
+    display: block;
+}
+.review{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.r-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.r-box{
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    background: rgba(69, 170, 242,0.3);
+    padding: 5px;
+    margin: 20px;
+    text-align: left;
+    border-radius: 10px;
+
+}
+.r-box img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius:50% ;
+    padding-right: 5px;   
+}
+.r-box p{
+    font-size: 16px;
+    color: #000;
+}
+.review h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.review h1::after{
+    content: "\f005";
+    width:40vw;
+    height: 12px;
+    color: darkred;
+    font-size: 1.5rem;
+    font-family: "Font Awesome 5 free";
+    display: block;
+    margin: 0 auto;
+    border-bottom: 8px solid crimson;
+    border-radius: 10px;
+}
+.text .fa{
+    color:#DD0706;
+}
+.text h4{
+    color: crimson;
+    font-size: 1.2rem;
+}
+.r-box{
+    transition: all 0.5s;
+}
+.r-box:hover{
+    box-shadow: 0 10px 20px -6px #000;
+}
+.cta{
+    width: 80%;
+    margin:100px auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/kk.bmp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding:100px 0 ;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.012)
+   ;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 2rem;
+}
+.cta a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s;
+}
+.cta a:hover{
+    border: 1px solid #DD0706;
+    background: #DD0706;
+}
+.footer{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.footer h2::after{
+    content: "\f005";
+    width:10vw;
+    height: 12px;
+    color: darkred;
+    font-size: 1.5rem;
+    font-family: "Font Awesome 5 free";
+    display: block;
+    margin: 0 auto;
+    border-bottom: 8px solid crimson;
+    border-radius: 10px;
+}
+.footer p{
+    padding-top: 10px;
+    text-align: justify;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: gray;
+}
+.cp{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+.icons img{
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+.icons img:hover{
+    filter: grayscale(0);
+}
+/* main css end */
+
+
+
+
+
+
+
+
+
+
+/* media css  */
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text_box h1{
+        font-size: 1.7rem;
+    }
+    .text_box p{
+        font-size: 14px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #DD0706;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links ul li::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: white;
+        display: block;
+        margin: auto;
+        transition: all 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 40px;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+    .course h1{
+        font-size: 1.5rem;
+    }
+    .course h1::after{
+        content: "\f005";
+        width:45vw;
+        height: 10px;
+        color: darkred;
+        font-size: 1.4rem;
+        font-family: "Font Awesome 5 free";
+        display: block;
+        margin: 0 auto;
+        border-bottom: 8px solid crimson;
+        border-radius: 10px;
+    }
+    .campus h1{
+        font-size: 1.5rem;
+    }
+    .campus h1::after{
+        content: "\f005";
+        width:50vw;
+        height: 10px;
+        color: darkred;
+        font-size: 1.4rem;
+        font-family: "Font Awesome 5 free";
+        display: block;
+        margin: 0 auto;
+        border-bottom: 8px solid crimson;
+        border-radius: 10px;
+    }
+    .message h1{
+        font-size: 1.5rem;
+    }
+    .message h1::after{
+        content: "\f005";
+        width:35vw;
+        height: 10px;
+        color: darkred;
+        font-size: 1.4rem;
+        font-family: "Font Awesome 5 free";
+        display: block;
+        margin: 0 auto;
+        border-bottom: 8px solid crimson;
+        border-radius: 10px;
+    }
+    .r-box{
+        width: 80%;
+        height: 35vh;
+        display: flex;
+        border: 1px solid #DD0706;
+        padding: 5px;
+        margin: 20px;
+        text-align: left;
+        }
+    .r-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .review h1{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .review h1::after{
+        content: "\f005";
+        width:60vw;
+        height: 12px;
+        color: darkred;
+        font-size: 1.5rem;
+        font-family: "Font Awesome 5 free";
+        display: block;
+        margin: 0 auto;
+        border-bottom: 8px solid crimson;
+        border-radius: 10px;
+    }
+    .footer h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .footer h2::after{
+        content: "\f005";
+        width:25vw;
+        height: 12px;
+        color: darkred;
+        font-size: 1.5rem;
+        font-family: "Font Awesome 5 free";
+        display: block;
+        margin: 0 auto;
+        border-bottom: 8px solid crimson;
+        border-radius: 10px;
+    }
+}
